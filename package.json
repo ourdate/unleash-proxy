@@ -1,0 +1,14 @@
+{
+  "name": "unleash-proxy",
+  "version": "1.0.0",
+  "description": "Unleash proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "Ourdate",
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "@unleash/proxy": "^0.10.4"
+  }
+}
