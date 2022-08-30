@@ -1,4 +1,4 @@
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const { createApp } = require('@unleash/proxy');
 
@@ -6,7 +6,7 @@ const app = createApp({
     unleashUrl: process.env.UNLEASH_API_URL,
     unleashApiToken: process.env.CLIENT_API_TOKEN,
     clientKeys: [process.env.PROXY_CLIENT_KEY],
-    proxyPort: 3000,
+    proxyPort: port,
 });
 
 app.listen(port, () =>
